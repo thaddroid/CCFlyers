@@ -1,0 +1,1268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+ <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/adView"
+    android:scrollbars="none"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+<TableLayout
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:background="#ffffff"
+    android:stretchColumns="0,1">
+
+    <TableRow
+        android:id="@+id/tableRow1" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/t_t" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview1_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview1_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/hong_tai" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview2_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview2_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow3" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/da_fu" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview3_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview3_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+   
+    <TableRow
+        android:id="@+id/tableRow4" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/da_zhong_hua" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview4_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview4_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow5" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/xin_da" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview5_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview5_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow6" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/guan_ye" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview6_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview6_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow7" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/feng_tai" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview7_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview7_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow8" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/hua_sheng" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview8_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview8_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow9" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/da_shi_jie" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview9_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview9_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow10" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/ding_tai" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview10_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview10_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow11" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/duo_fu" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview11_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview11_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow12" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/bestco" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview12_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview12_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow13" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/yuanming" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview13_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/textview13_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow14" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/fu_yao" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview14_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview14_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow15" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/sunny" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview15_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview15_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow16" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/galleria" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview16"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview16_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview16_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow17" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/price_chopper" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview17"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview17_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview17_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow18" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/freshco" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview18"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview18_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview18_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow19" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/food_basics" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview19"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview19_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview19_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow20" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/no_frills" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview20"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview20_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview20_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow21" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/seasons" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview21"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview21_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview21_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow22" 
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/roundbutton">
+        
+        <ImageView
+            android:id="@+id/image22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/imageview"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/sunfood" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/textview22"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview22_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/weeklypromo"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        <TextView 
+            android:id="@+id/textview22_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        
+        </LinearLayout>
+       	
+    </TableRow>
+
+
+</TableLayout>
+
+</ScrollView>
+
+ 	<com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3929736155927907/2835902272"/>
+</RelativeLayout>

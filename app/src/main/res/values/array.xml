@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="supermarket_title_list">
+        <item>大福超級市場</item>
+        <item>大世界超級市場</item>
+        <item>大中華超級市場</item>
+        <item>大統華超級市場</item>
+        <item>鼎泰超級市場</item>
+        <item>多福超級市場</item>
+        <item>豐泰超級市場</item>
+        <item>福耀超級市場</item>
+        <item>冠業超級市場</item>
+        <item>鴻泰超級市場</item>
+        <item>華盛超級市場</item>
+        <item>佳樂超級市場</item>
+        <item>百福超級市場</item>
+        <item>陽光超級市場</item>
+        <item>信達超級市場</item>
+        <item>元明超級市場</item>
+        <item>鴻華超級市場</item>
+        <item>Food Basics</item>
+        <item>FreshCo.</item>
+        <item>No Frills</item>
+        <item>Price Chopper</item>
+        <item>Galleria Korean SuperMartket</item>
+        
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CCFlyers</string>
+    <string name="imageview">CopyRight</string>
+    <string name="weeklypromo">本週特價</string>
+    <string name="lastpromo">上週特價</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_exit">EXIT</string>
+    <string name="action_force">REFRESH</string>
+
+</resources>
