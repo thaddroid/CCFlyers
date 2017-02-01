@@ -20,6 +20,7 @@ import java.util.List;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import android.app.Activity;
@@ -574,156 +575,32 @@ public class MainActivityV2 extends Activity {
 			int errorCount=0;
 			
 			for(int m:array){
-				//imageSrc="";
-				String startDate="";
-				String endDate="";
 				String imageURL = "";
 				if (!urlArray[m].equals("") && checkURLExists(urlArray[m])) {
 					try {
 						document = Jsoup.connect(urlArray[m]).get();
-						Elements elements = document.select("div[class=right]");
-						Elements datesElements = elements.select("ul[class=dates] li");
-						startDate = datesElements.get(0).text().substring(7);
-						endDate = datesElements.get(1).text().substring(5);
-						Elements imageElements = elements.select("a[class=button]");
-						imageURL = imageElements.attr("href");
+						Element element = document.getElementsByClass("flyer-store-inner").first().getElementsByTag("span").first();
+						String dateString = element.text();
+						String[] dateStringArray = dateString.split("-");
+
+						Element latestElement = document.getElementsByClass("view-flyer").select("a").first();
+						imageURL = latestElement.attr("href");
 						
-						superMarketList.get(m).setStartDate(startDate.trim());
-						superMarketList.get(m).setExpiredDate(endDate.trim());
+						superMarketList.get(m).setStartDate(dateStringArray[0].trim());
+						superMarketList.get(m).setExpiredDate(dateStringArray[1].trim());
 						superMarketList.get(m).setURL(imageURL);
 
 						//imageSrc = "http://www.foodymart.com/" + imgName;
 						decodeImageFromImageURL((imageURL+"/all"), m);
 						//superMarketList.get(m).setImgSrc(0, imageSrc);
-					} catch (IOException e) {
+					} catch (Exception e) {
 						e.printStackTrace();
 						errorCount++;
 					}
 				}else{
 					errorCount++;
 				}
-//				switch(m){
-//				case 0:
-//					break;
-//				case 1:
-//					break;
-//				case 2:
-//					break;
-//				case 3:
-////					if(checkURLExists(urlArray[3])){
-////						try {
-////							document = Jsoup.connect(urlArray[3]).get();
-////							Elements imgElements = document.select("img");
-////							String imgUrl = imgElements.attr("src");
-////							
-////							Log.d(TAG, document.toString());
-////							
-////						} catch (IOException e) {
-////							e.printStackTrace();
-////						}
-////					}
-//					imageSrc="http://www.tnt-supermarket.com/data/weekly_flyers/tnt_weekly_flyer_image_5_big5.jpg";
-//					superMarketList.get(m).setUpFlyers(1);
-//					superMarketList.get(m).setImgSrc(0, imageSrc);
-//					break;
-//				case 4:
-//					if (checkURLExists(urlArray[m])) {
-//						try {
-//							document = Jsoup.connect(urlArray[m]).get();
-//							Elements imgElements = document.select("img[class=flyer]");
-//							superMarketList.get(m).setUpFlyers(imgElements.size());
-//							String imgName = imgElements.attr("src");
-//							
-//							imageSrc = "http://www.foodymart.com/"+imgName;
-//							
-//							superMarketList.get(m).setImgSrc(0, imageSrc);
-//						} catch (IOException e) {
-//							e.printStackTrace();
-//						}
-//					}
-//					break;
-//				case 5:
-//					break;
-//				case 6:
-//					if (checkURLExists(urlArray[m])) {
-//						try {
-//							document = Jsoup.connect(urlArray[m]).get();
-//							Elements imgElements = document.select("img[class=flyer]");
-//							superMarketList.get(m).setUpFlyers(imgElements.size());
-//							String imgName = imgElements.attr("src");
-//							
-//							imageSrc = "http://www.foodymart.com/"+imgName;
-//							
-//							superMarketList.get(m).setImgSrc(0, imageSrc);
-//						} catch (IOException e) {
-//							e.printStackTrace();
-//						}
-//					}
-//					break;
-//				case 7:
-//					break;
-//				case 8:
-//					break;
-//				case 9:
-//					if (checkURLExists(urlArray[m])) {
-//						try {
-//							document = Jsoup.connect(urlArray[m]).get();
-//							Elements imgElements = document.select("img[class=flyer]");
-//							superMarketList.get(m).setUpFlyers(imgElements.size());
-//							String imgName = imgElements.attr("src");
-//							
-//							imageSrc = "http://www.foodymart.com/"+imgName;
-//							
-//							superMarketList.get(m).setImgSrc(0, imageSrc);
-//						} catch (IOException e) {
-//							e.printStackTrace();
-//						}
-//					}
-//					break;
-//				case 10:
-//					decodeFromFlyerCenter(m);
-//					break;
-//				case 11:
-//					break;
-//				case 12:
-//					if (checkURLExists(urlArray[m])) {
-//						try {
-//							document = Jsoup.connect(urlArray[m]).get();
-//							Elements imgElements = document.select("div[class=img_frame img_size_fullwidth alignleft] a img[src]");
-//							superMarketList.get(m).setUpFlyers(imgElements.size());
-//							for(int i=0; i<imgElements.size(); i++){
-//								String imgName = imgElements.get(i).attr("src");
-//								superMarketList.get(m).setImgSrc(i, imgName);
-//							}
-////							String imgName = imgElements.attr("src");
-////							
-////							superMarketList.get(m).setImgSrc(0, imageSrc);
-//						} catch (IOException e) {
-//							e.printStackTrace();
-//						}
-//					}
-//					break;
-//				case 13:
-//					break;
-//				case 14:
-//					break;
-//				case 15:
-//					break;
-//				case 16:
-//					break;
-//				case 17:
-//					break;
-//				case 18:
-//					break;
-//				case 19:
-//					break;
-//				case 20:
-//					break;
-//				case 21:
-//					break;
-//				default:
-//					break;
-//				}
+
 				count++;
 				mProgressBar.setProgress(100/array.length*count);
 			}
